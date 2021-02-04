@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .complete {
+        text-decoration: line-through;
+        color: #999;
+      }
+
+      .hideComplete li.complete {
+        display: none;
+      }
+      .hideIncomplete li:not(.complete) {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>TO DO LIST</h2>
+
+    <div>
+      <span id="todo-status">
+        <button id="total">전체: 0</button>
+        <button id="complete">완료: 0</button>
+        <button id="incomplete">미완료: 0</button>
+      </span>
+    </div>
+
+    <input type="text" id="my-input" />
+    <button id="my-btn">My Button</button>
+    <ul id="my-list"></ul>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
